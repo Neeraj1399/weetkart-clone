@@ -1,0 +1,71 @@
+/* Header.module.css */
+
+.header {
+    width: 100%;
+    background: #fff;
+  }
+  
+  .topBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background: black;
+  }
+  
+  .socialIcons {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .icon {
+    color: white;
+    font-size: 18px;
+  }
+  
+  .logo {
+    display: block;
+    margin: auto;
+  }
+  
+  .loginButton {
+    display: flex;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+    gap: 5px;
+    background: #eee;
+    padding: 5px 10px;
+    border-radius: 5px;
+  }
+  
+  .navBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .brand img {
+    height: 50px;
+  }
+  
+  .navMenu {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+  }
+  
+  .navMenu li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+  }
+  
+  .icons {
+    display: flex;
+    gap: 15px;
+    font-size: 20px;
+  }
+  
