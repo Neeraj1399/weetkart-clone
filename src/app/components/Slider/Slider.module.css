@@ -1,0 +1,17 @@
+.topBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 20px;
+    background: black;
+    width: 100%;
+  }
+  
+  
+  .sliderContainer {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
