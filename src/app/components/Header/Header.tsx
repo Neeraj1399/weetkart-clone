@@ -66,7 +66,11 @@ const Header: React.FC = () => {
         </div>
 
         {/* Login Button */}
-        <Link href="/login" className={styles.loginButton} aria-label="Login">
+        <Link
+          href="/Myaccount"
+          className={styles.loginButton}
+          aria-label="Login"
+        >
           <FaUser /> Login
         </Link>
       </div>

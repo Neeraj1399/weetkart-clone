@@ -1,0 +1,67 @@
+/* Form Container */
+.formContainer {
+  width: 100%;
+  max-width: 620px;
+  margin: 20px auto;
+  padding: 24px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Tabs Styling */
+.tabs {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.tab {
+  flex: 1;
+  padding: 14px;
+  font-size: 18px;
+  text-align: center;
+  cursor: pointer;
+  background: #f5f5f5;
+  font-weight: 600;
+  transition: all 0.3s ease-in-out;
+}
+
+.tab.active {
+  background: black;
+  color: white;
+}
+
+/* Submit Button */
+.submitButton {
+  width: 100%;
+  max-width: 400px; /* Increased width */
+  background-color: black;
+  color: white;
+  padding: 18px; /* Increased padding */
+  font-size: 18px; /* Larger font size */
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease-in-out;
+  border-radius: 8px;
+  margin: 20px auto;
+  display: block;
+}
+
+.submitButton:hover {
+  background-color: #222;
+}
+
+.submitButton:active {
+  transform: scale(0.98);
+}
+
+/* Mobile Optimizations */
+@media (max-width: 480px) {
+  .submitButton {
+      max-width: 100%;
+      font-size: 16px;
+      padding: 16px;
+  }
+}
