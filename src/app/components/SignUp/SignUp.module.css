@@ -4,8 +4,8 @@
   margin: auto;
   padding: 20px;
   
-  
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  /* box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); */
 }
 
 .inputGroup {
@@ -68,17 +68,34 @@
 }
 
 .submitButton {
-  width: 100%;
-  padding: 12px;
-  background-color: black;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  font-weight: bold;
-  text-transform: uppercase;
-}
-
-.submitButton:hover {
-  background-color: #333;
-}
+    width: 100%;
+    padding: 12px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .submitButton::after {
+    content: "";
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: white;
+    transition: width 0.4s ease-in-out;
+  }
+  
+  .submitButton:hover::after {
+    width: 100%;
+  }
+  
+  .submitButton:hover {
+    background-color: #333;
+  }
