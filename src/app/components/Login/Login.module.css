@@ -55,7 +55,7 @@
 }
 .submitButton {
     width: 100%;
-    padding: 12px;
+    padding: 15px;
     background-color: black;
     color: white;
     border: none;
@@ -63,26 +63,29 @@
     cursor: pointer;
     font-weight: bold;
     text-transform: uppercase;
+    font-size: 16px;
+    text-align: center;
     position: relative;
     overflow: hidden;
   }
-.submitButton:hover {
-  background-color: #333;
-}
-
   
   .submitButton::after {
     content: "";
     position: absolute;
-    bottom: 5px;
-    left: 0;
+    bottom: 0;
+    left: 50%;
     width: 0;
     height: 2px;
     background-color: white;
-    transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out, left 0.4s ease-in-out;
   }
   
   .submitButton:hover::after {
-    width: 100%;
+    width: 80%;
+    left: 10%;
+  }
+  
+  .submitButton:hover {
+    background-color: black;
   }
   
