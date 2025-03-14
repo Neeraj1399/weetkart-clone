@@ -99,7 +99,7 @@ export default function Login() {
             <span
               className={style.forgotPassword}
               onClick={() => setForgotPassword(true)}
-              style={{ cursor: "pointer", color: "blue" }}
+              style={{ cursor: "pointer", color: "black" }}
             >
               Forgot Password?
             </span>
@@ -108,7 +108,7 @@ export default function Login() {
           <button className={style.submitButton}>SIGN IN</button>
         </>
       ) : (
-        <ForgotPassword onBack={() => setForgotPassword(false)} />
+        <ForgotPassword />
       )}
     </div>
   );

@@ -37,11 +37,7 @@
 import React, { useState } from "react";
 import style from "./ForgotPassword.module.css";
 
-interface ForgotPasswordProps {
-  onBack: () => void;
-}
-
-export default function ForgotPassword({ onBack }: ForgotPasswordProps) {
+export default function ForgotPassword() {
   const [email, setEmail] = useState("");
 
   const handleSubmit = (e: React.FormEvent) => {
@@ -68,10 +64,6 @@ export default function ForgotPassword({ onBack }: ForgotPasswordProps) {
       <button onClick={handleSubmit} className={style.submitButton}>
         Send Reset Link
       </button>
-      {/* 
-      <button onClick={onBack} className={style.backButton}>
-        Back to Login
-      </button> */}
     </div>
   );
 }
