@@ -64,4 +64,33 @@
       font-size: 16px;
       padding: 16px;
   }
+  .breadcrumb {
+  font-size: 14px;
+  font-weight: 500;
+  color: #333;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 8px; /* Adjust spacing between items */
+}
+
+.breadcrumb span {
+  color: #666;
+  font-weight: normal;
+}
+
+.breadcrumb span:first-child {
+  font-weight: bold;
+  color: #000; /* Ensure 'Home' is bold and black */
+}
+
+.breadcrumb span::after {
+  content: ">";
+  margin-left: 8px;
+  color: #999;
+}
+
+.breadcrumb span:last-child::after {
+  content: "";
+}
 }
