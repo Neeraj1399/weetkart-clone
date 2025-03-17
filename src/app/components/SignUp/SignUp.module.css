@@ -99,3 +99,18 @@
   .submitButton:hover {
     background-color: #333;
   }
+  .validationContainer {
+    margin-top: 10px;
+  }
+  
+  .valid {
+    color: green;
+    font-size: 14px;
+    margin: 2px 0;
+  }
+  
+  .invalid {
+    color: red;
+    font-size: 14px;
+    margin: 2px 0;
+  }
