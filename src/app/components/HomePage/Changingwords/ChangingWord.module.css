@@ -1,0 +1,26 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem; /* Adjust text size */
+    font-weight: bold;
+    margin-top: 20px; /* Space below slider */
+    text-align: center;
+  }
+  
+  .changingText {
+    color: red; /* Changing word in red */
+    margin-left: 10px;
+  }
+  
+  .cursor {
+    animation: blink 0.8s infinite;
+    color: red;
+  }
+  
+  @keyframes blink {
+    50% {
+      opacity: 0;
+    }
+  }
+  
