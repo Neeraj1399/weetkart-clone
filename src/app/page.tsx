@@ -111,7 +111,9 @@
 //   );
 // }
 
+import BudgetNow from "./components/HomePage/BudgetNow/BudgetNow";
 import ChangingWord from "./components/HomePage/Changingwords/ChangingWord";
+import ProductGrid from "./components/HomePage/ProductGrid/ProductGrid";
 import ImageSlider from "./components/HomePage/Slider/ImageSlider."; // Adjust the path as needed
 
 export default function Home() {
@@ -121,6 +123,8 @@ export default function Home() {
         {/* Add the Image Slider Below Header */}
         <ImageSlider />
         <ChangingWord />
+        <BudgetNow />
+        <ProductGrid />
 
         {/* Optional: Other content here */}
         {/* <h1 className="text-2xl font-bold"></h1>

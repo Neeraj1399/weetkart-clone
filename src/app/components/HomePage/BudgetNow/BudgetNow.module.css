@@ -1,0 +1,46 @@
+.container {
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+  }
+  
+  .heading {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+  }
+  
+  .image {
+    border-radius: 10px;
+    width: 100%;
+    height: auto;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .card:hover .image {
+    
+    opacity: 1; /* Ensures the image remains fully visible */
+}
+
+  
+  
+
+  
