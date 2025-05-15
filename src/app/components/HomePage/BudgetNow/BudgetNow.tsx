@@ -1,36 +1,31 @@
 "use client";
 
+import { useState, useEffect } from "react";
+import axios from "axios"; // Import axios
 import Image from "next/image";
 import styles from "./BudgetNow.module.css";
 
-const products = [
-  {
-    src: "https://weetkart.com/wp-content/uploads/2-21.avif",
-  },
-  {
-    src: "https://weetkart.com/wp-content/uploads/3-20.avif",
-  },
-  {
-    src: "https://weetkart.com/wp-content/uploads/4-17.avif",
-  },
-  {
-    src: "https://weetkart.com/wp-content/uploads/5-17.avif",
-  },
-  {
-    src: "https://weetkart.com/wp-content/uploads/tshirts-1.avif",
-  },
-  {
-    src: "https://weetkart.com/wp-content/uploads/7-17.avif",
-  },
-  {
-    src: "https://weetkart.com/wp-content/uploads/tshirts.avif",
-  },
-  {
-    src: "https://weetkart.com/wp-content/uploads/9-17.avif",
-  },
-];
+const BudgetNow = () => {
+  type products = {
+    id: number;
+    title: string;
+    thumbnail: string;
+    // Add more fields as needed
+  };
+  const [products, setProducts] = useState<products[]>([]);
 
-export default function BudgetNow() {
+  useEffect(() => {
+    // Use axios to fetch data
+    axios
+      .get("https://dummyjson.com/products")
+      .then((response) => {
+        setProducts(response.data.products); // Set the fetched products from dummyjson
+      })
+      .catch((err) => {
+        console.error("Failed to fetch products:", err);
+      });
+  }, []);
+
   return (
     <div className={styles.container}>
       <h2 className={styles.heading}>Shop Under Budget Now!</h2>
@@ -38,8 +33,8 @@ export default function BudgetNow() {
         {products.map((product, index) => (
           <div key={index} className={styles.card}>
             <Image
-              src={product.src}
-              alt="Product Image"
+              src={product.thumbnail} // Use the thumbnail from dummyjson
+              alt={product.title}
               width={300}
               height={400}
               className={styles.image}
@@ -49,4 +44,6 @@ export default function BudgetNow() {
       </div>
     </div>
   );
-}
+};
+
+export default BudgetNow;

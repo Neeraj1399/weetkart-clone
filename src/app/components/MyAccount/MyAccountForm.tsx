@@ -63,7 +63,6 @@ export default function MyAccountForm() {
             Sign Up
           </button>
         </div>
-
         {/* Show Login or SignUp Form */}
         {isLogin ? <Login /> : <SignUp />}
       </div>

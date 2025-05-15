@@ -2,6 +2,7 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Autoplay } from "swiper/modules";
 import "swiper/css";
+import Image from "next/image";
 
 const images = [
   "https://weetkart.com/wp-content/uploads/Winter-fashion-8.avif",
@@ -21,7 +22,7 @@ export default function ImageSlider() {
       >
         {images.map((src, index) => (
           <SwiperSlide key={index}>
-            <img
+            <Image
               src={src}
               alt={`Slide ${index + 1}`}
               className="w-full h-[500px] object-cover rounded-lg"
